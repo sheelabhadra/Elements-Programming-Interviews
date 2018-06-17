@@ -29,6 +29,17 @@ var/
 *.manifest
 *.spec
 
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# virtualenv
+.venv
+venv/
+ENV/
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
