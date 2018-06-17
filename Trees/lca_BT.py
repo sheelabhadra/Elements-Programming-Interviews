@@ -1,8 +1,4 @@
-class Node:
-	def __init__(self, x):
-		self.val = x
-		self.left = None
-		self.right = None
+from TreeNode import Node
 
 def lca_BT(root, node1, node2):
 	if root == None:

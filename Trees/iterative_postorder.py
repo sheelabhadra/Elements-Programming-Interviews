@@ -1,8 +1,4 @@
-class Node:
-	def __init__(self, x):
-		self.val = x
-		self.left = None
-		self.right = None
+from TreeNode import Node
 
 def iterative_postorder(root):
 	# Using 2 stacks: 1 for DFs, another for storing the pop() sequence

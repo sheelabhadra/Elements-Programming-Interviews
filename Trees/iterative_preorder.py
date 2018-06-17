@@ -2,11 +2,7 @@
 # If root.left is null then pop() and it to the result.
 # Add the popped elemnt's right child to the result
 
-class Node:
-	def __init__(self, x):
-		self.val = x
-		self.left = None
-		self.right = None
+from TreeNode import Node
 
 def iterative_preorder(root):
 	s = [root]

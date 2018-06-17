@@ -1,10 +1,6 @@
 # Maximum root to leaf sum path
 
-class Node:
-	def __init__(self, x):
-		self.val = x
-		self.left = None
-		self.right = None
+from TreeNode import Node
 
 # Store all paths in a list
 paths = []
