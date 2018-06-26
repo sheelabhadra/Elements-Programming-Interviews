@@ -26,6 +26,9 @@ def range_lookup_bst(root, interval):
 			helper(root.left)
 			result.append(root.val)
 			helper(root.right)
+			
+			# the left, root, right order is only to maintain the inorder traversal order
+			# changing the order won't affect the final result
 
 		elif interval[0] > root.val:
 			helper(root.right)
