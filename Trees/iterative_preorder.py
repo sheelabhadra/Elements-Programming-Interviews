@@ -1,6 +1,8 @@
-# Push the curent node and its left child
-# If root.left is null then pop() and it to the result.
-# Add the popped elemnt's right child to the result
+""" SOLUTION
+	Use a stack. It is initailized containing the root. Visit it by popping it. First add
+	its right child and then its left child to the stack.
+
+"""
 
 from TreeNode import Node
 
