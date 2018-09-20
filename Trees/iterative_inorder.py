@@ -5,19 +5,18 @@
 from TreeNode import Node
 
 def iterative_inorder(root):
-	s, r, res = [], [], []
+	s, res = [], []
 	while s or root:
 		if root:
 			s.append(root)
+			# Going left
 			root = root.left
 		else:
+			# Going up
 			root = s.pop()
-			r.append(root)
+			res.append(root.val)
+			# Going right
 			root = root.right
-
-	res = []
-	while r:
-		res.append(r.pop(0).val)
 
 	return res
 
